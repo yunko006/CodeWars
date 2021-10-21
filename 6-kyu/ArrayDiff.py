@@ -7,3 +7,10 @@ def array_diff(a, b):
                 not_list.remove(i)
 
     return not_list
+
+
+# A better solution
+
+def array_diff(a, b):
+
+    return [x for x in a if x not in b]
