@@ -12,9 +12,9 @@ def clean_string(s):
     for char in s:
         if char != '#':
             cleaned.append(char)
-        else:
-            if cleaned:  # if list is not empty
-                # dont use remove or it will delete all same char from the list
-                cleaned.pop()
+        elif cleaned:
+            # if list is not empty
+            # dont use remove or it will delete all same char from the list
+            cleaned.pop()
 
     return ''.join(cleaned)
